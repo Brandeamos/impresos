@@ -22,7 +22,7 @@ body {
 	background-image: linear-gradient(
 		rgb(0,0,0,0.5),
 		rgba(0,0,0,0.5)),
-		url(images/pantera_1.jpg);
+		url(images/pantera_2.jpg);
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -183,7 +183,7 @@ body {
 	background-image: linear-gradient(
 	rgb(0, 0, 0, 0.7),
 	rgba(0, 0, 0, 0.7)),
-	url(images/imprenta_1.jpg);
+	url(images/imprenta_2.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -261,7 +261,7 @@ body {
 }
 
 .general-3 {
-	background-image: url(images/display_x_publicidad.png);
+	background-image: url(images/display_x_publicidad_2.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
