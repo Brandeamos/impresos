@@ -14,6 +14,9 @@
 			<a href="#" class="logo" >
 				<img src="images/154x154px_logo.png" class="logo-icono" alt="icono_brandeamos">
 			</a>
+			<div>
+				<button id="bdark">Modo Oscuro</button>
+			</div>
 			<input type="checkbox" id="menu" />
 			<label for="menu">
 				<img src="images/menu.png" class="menu-icono" alt="icono_menu">
@@ -374,6 +377,29 @@
 </footer>	
 
 	<script src="lightbox-plus-jquery.min.js" ></script>
+	<script>
+		const bdark = document.querySelector('#bdark');
+		const body = document.querySelector('body');
+		
+		load();
+		
+		bdark.addEventListener('click', e => {
+			body.classList.toggle('darkmode');
+			store(body.classList.contains('darkmode'));
+		});
+		function load(){
+			const darkmode = localStorage.getItem('darkmode');
+			
+			if(!darkmode){
+				store('false');
+			} else if(darkmode == 'true'){
+				body.classList.add('darkmode');
+			}
+		}
+		function store(value){
+			localStorage.setItem('darkmode', value);
+		}
+	</script>
 </body>
 	
 </html>
